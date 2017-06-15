@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nutthapon.lab2150660.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="364dp"
+        android:layout_height="504dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yourName"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/yourName"
+            android:layout_marginTop="35dp"
+            android:text="ข้อมูลผู้สมัคร"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/yourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="ชื่อ"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="222dp" />
+
+        <EditText
+            android:id="@+id/Lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="นามสกุล"
+            android:layout_below="@+id/yourName"
+            android:layout_alignLeft="@+id/yourName"
+            android:layout_alignStart="@+id/yourName"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/Tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="โทร"
+            android:layout_below="@+id/Lastname"
+            android:layout_alignLeft="@+id/Lastname"
+            android:layout_alignStart="@+id/Lastname"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:onClick="sendData"
+            android:text="Button"
+            tools:layout_editor_absoluteX="257dp"
+            tools:layout_editor_absoluteY="222dp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
